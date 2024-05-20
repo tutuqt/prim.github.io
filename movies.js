@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return response.json();
     })
     .then(data => {
-        const movies = data.record; 
+        const movies = data.record;
         const movieContainer = document.querySelector('.movie-container');
         movies.forEach(movie => {
             const card = document.createElement('div');
@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h3 class="movie-title">${movie.title}</h3>
                     <p class="movie-times">${movie.times.join(', ')}</p>
                     <p>${movie.description}</p>
+                    <a href="order.html" class="book-button">Тасалбар захиалах</a>
                 </div>
             `;
 
