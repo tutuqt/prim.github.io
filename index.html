@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><img src="./logo.jpg" alt="Logo" style="z-index: 20;"></li>
+                <li><a href="index.html">Эхлэл</a></li>
+                <li><a href="movies.html">Захиалга</a></li>
+                <li><a href="login.html">Нэвтрэх</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="background-video">
+        <video autoplay muted loop>
+            <source src="../webd/source/bgvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Манай дэлгэцнээ</h1>
+    </section>
+    
+    <section class="featured-movies">
+        <div class="movie-container"></div>
+    </section>
+    
+    <section class="upcoming-movies">
+        <h1>Тун удахгүй</h1>
+        <div class="upcoming-movie-container"></div>
+    </section>
+    
+    <footer>
+        <p>© 2024 Prime Cineplex өмчөөр хамгаалагдав.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
